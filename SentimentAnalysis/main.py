@@ -1,0 +1,28 @@
+from sentiment_analysis import compute_tweets
+
+tweetData = input("Enter the name of the file containing tweets: ")
+keyData = input("Enter the name of the file containing Keywords: ")
+
+results = compute_tweets(tweetData,keyData)
+
+print("****************************************************")
+print("Eastern:")
+print("Average Happiness: {:.2f}".format(results[0][0]))
+print("Number of Keyword Tweets: {}".format(results[0][1]))
+print("Number of Tweets: {}".format(results[0][2]))
+print("****************************************************")
+print("Central:")
+print("Average Happiness: {:.2f}".format(results[1][0]))
+print("Number of Keyword Tweets: {}".format(results[1][1]))
+print("Number of Tweets: {}".format(results[1][2]))
+print("****************************************************")
+print("Mountain:")
+print("Average Happiness: {:.2f}".format(results[2][0]))
+print("Number of Keyword Tweets: {}".format(results[2][1]))
+print("Number of Tweets: {}".format(results[2][2]))
+print("****************************************************")
+print("Pacific:")
+print("Average Happiness: {:.2f}".format(results[3][0]))
+print("Number of Keyword Tweets: {}".format(results[3][1]))
+print("Number of Tweets: {}".format(results[3][2]))
+print("****************************************************")
